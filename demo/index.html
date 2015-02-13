@@ -1,0 +1,52 @@
+<!--
+   index.html
+   A video player without video files, just JSON. Based on "images frames" thought to mobile devices!
+
+   @category
+   @author Vagner Santana
+   @link http://github.com/vagnervjs/frame-video
+   @version:0.1
+   @since: 04/10/2013
+-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Frame Player</title>
+
+    <style>
+    body{background-color: #444;}
+      .frameplayer{width: 200px; height: 200px;}
+    </style>
+</head>
+<body>
+    <div id="player1" class="frameplayer"></div>
+    <div id="player2" class="frameplayer"></div>
+    
+
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="jquery.fyFramePlayer-1.0.js"></script>
+    <script src="yaodou.js"></script>
+    <script src="anniu.js"></script>
+    <script src="zhonghua.js"></script>
+    <script>
+      $('#player1').fyFramePlayer({
+        rate: 10,
+        fixedSize:true,
+        playTimes:2,
+        movieName:'movieYaodou,movieAnniu,zhonghua',
+        onPlayEnd: function(){}
+      });
+
+       $('#player2').fyFramePlayer({
+        rate: 10,
+        fixedSize:false,
+        // playTimes:0,
+        movieName:'movieAnniu',
+        onPlayEnd: function(){}
+      });
+
+
+    </script>
+</body>
+</html>
