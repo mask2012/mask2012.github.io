@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="stylesheet" href="css/d3.css" type="text/css">
+        <link rel="stylesheet" href="css/calculator.css" type="text/css">
+	</head>
+	<body>
+		
+        <ul class="start_info">
+            <li><span>假设投资</span><input type="range" value="42" id="nodeNum"><b id="nodeNumTxt">42</b><b>个节点</b></li>
+            <li>
+                <span>假设每个节点每天收益从</span>
+                <input type="range" value="0.06" step="0.001" min="0.02" max="0.06" id="restAMonthA">
+                <b id="restAMonthATxt">0.041</b>
+                匀速变化到
+                <input type="range" value="0.02" step="0.001" min="0.02" max="0.06" id="restAMonthB">
+                <b id="restAMonthBTxt">0.021</b>
+            </li>
+            <li><span>假设投资</span><input type="range" value="30" step="1" min="2" max="100" id="monthNum"><b id="monthNumTxt">30</b><b>个月</b></li>
+        </ul>
+
+        <div class="btn_calculate none" id="btnCalculate">开始计算</div>
+
+        <div class="row">
+            <div class="col_table">
+                <ul class="result_list">
+                    <li class="li_title">
+                        <div class="month_num">第几个月</div>
+                        <div class="node_num">节点数与收益</div>
+                        <div class="node_rest">零头</div>
+                    </li>
+                </ul>
+                
+                <ul class="result_list" id="resultList">
+                    <!-- <li>
+                        <div class="month_num">第1个月</div>
+                        <div class="node_num">42*1.037=43.445</div>
+                        <div class="node_rest">3.23</div>
+                    </li> -->
+                </ul>
+            </div>
+            
+            <div class="col_chart">
+                <div class="comm_chart_hint" id="holdChartHint0" >
+                    <span class="color_orange">节点数</span>
+                    <span class="color_blue">每个节点每日收益(zen)</span>
+                </div>
+                <div class="d3_chart wave_chart" id="restChart"></div>
+            </div>
+        </div>
+		
+
+        <script type="text/x-template" id="listTemplate">
+            <@ for (i=0; i<data.length; i++){ @>
+                <li>
+                    <div class="month_num">第<@=i+1@>个月</div>
+                    <div class="node_num"><@=data[i].nodeNum@>*<@=data[i].intest@>=<@=(data[i].nodeNum*data[i].intest).toFixed(2)@></div>
+                    <div class="node_rest"><@=data[i].rest@></div>
+                </li>
+            <@}@>
+        </script>
+        
+        <script src="js/zepto.min.js"></script>
+        <script src="js/d3.min.js"></script>
+        <script src="js/d3Charts-line.js"></script>
+        <script src="js/calculator.js"></script>
+	</body>
+</html>
+
+
+
+
