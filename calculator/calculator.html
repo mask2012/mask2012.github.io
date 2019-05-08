@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <link rel="stylesheet" href="css/d3.css" type="text/css">
         <link rel="stylesheet" href="css/calculator.css" type="text/css">
-	</head>
-	<body>
-		
+    </head>
+    <body>
+        
         <ul class="start_info">
             <li><span>假设投资</span><input type="range" value="42" id="nodeNum"><b id="nodeNumTxt">42</b><b>个节点</b></li>
             <li>
@@ -25,6 +25,14 @@
         <div class="btn_calculate none" id="btnCalculate">开始计算</div>
 
         <div class="row">
+            <div class="col_chart">
+                <div class="comm_chart_hint" id="holdChartHint0" >
+                    <span class="color_orange">节点数</span>
+                    <span class="color_blue">每个节点每日收益(zen)</span>
+                </div>
+                <div class="d3_chart wave_chart" id="restChart"></div>
+            </div>
+
             <div class="col_table">
                 <ul class="result_list">
                     <li class="li_title">
@@ -42,16 +50,8 @@
                     </li> -->
                 </ul>
             </div>
-            
-            <div class="col_chart">
-                <div class="comm_chart_hint" id="holdChartHint0" >
-                    <span class="color_orange">节点数</span>
-                    <span class="color_blue">每个节点每日收益(zen)</span>
-                </div>
-                <div class="d3_chart wave_chart" id="restChart"></div>
-            </div>
         </div>
-		
+        
 
         <script type="text/x-template" id="listTemplate">
             <@ for (i=0; i<data.length; i++){ @>
@@ -67,7 +67,17 @@
         <script src="js/d3.min.js"></script>
         <script src="js/d3Charts-line.js"></script>
         <script src="js/calculator.js"></script>
-	</body>
+        <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?eabd96f33caa7fc6a4b2eeee9fdf1e62";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+
+    </body>
 </html>
 
 
