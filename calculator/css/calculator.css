@@ -14,7 +14,7 @@ body { background-color: #fefefe; font-size: 14px; font-family: Helvetica, sans-
 
 .row{width: 100%; overflow: hidden;}
 
-	.col_chart{ float: right; width: 600px; }
+	.col_chart{ float: left; width: 600px; }
 
 	.col_table{ float: left; width: 400px; }
 	.result_list{ width: 100%; }
