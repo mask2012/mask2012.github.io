@@ -6,28 +6,8 @@ body { background-color: #fefefe; font-size: 14px; font-family: Helvetica, sans-
 .none{ display: none!important; }
 
 
-.start_info li{ margin-bottom: 10px; }
-.start_info li span{ display: inline-block; width: 180px;}
-.start_info input{ width: 100px; height: 32px; line-height: 32px; border: 1px #999 solid; font-size: 16px; color: #333; padding: 4px 10px; vertical-align: middle; margin: 0 4px;}
 
-.btn_calculate{ display: inline-block; padding: 10px 20px; background-color: #3385ff; color: #fff; border-radius: 4px; margin: 20px 0; cursor: pointer;}
-
-.row{width: 100%; overflow: hidden;}
-
-	.col_chart{ float: left; width: 600px; }
-
-	.col_table{ float: left; width: 400px; }
-	.result_list{ width: 100%; }
-	.result_list li{ border-bottom: 1px #999 solid; display: flex; flex-direction:row;}
-	.result_list li.li_title{ padding: 10px 0; }
-	.result_list li>div{ padding: 7px; box-sizing: border-box; display: flex; align-items: center;}
-	.result_list li .month_num{ flex: 1; }
-	.result_list li .node_num{ flex: 2; }
-	.result_list li .node_rest{ flex: 2; }
-
-
-
-@media only screen and (max-width: 1040px) {
-    .col_chart{ float: none; width: 100%;}
-    .col_table{ float: none; width: 100%;}
-}
+.list{ padding: 20px; }
+.list li{ font-size: 16px; line-height: 1.6; margin-bottom: 10px; }
+.list li a{ color: #3582fb; text-decoration: none; transition: all 0.1s; display: inline-block;}
+.list li a:hover{ color: #4488f3; transform: translate(6px,0);}
