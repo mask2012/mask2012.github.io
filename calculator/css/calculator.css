@@ -7,14 +7,14 @@ body { background-color: #fefefe; font-size: 14px; font-family: Helvetica, sans-
 
 
 .start_info li{ margin-bottom: 10px; }
-.start_info li span{ display: inline-block; width: 180px;}
+.start_info li span{ display: inline-block; margin: 0 10px;}
 .start_info input{ width: 100px; height: 32px; line-height: 32px; border: 1px #999 solid; font-size: 16px; color: #333; padding: 4px 10px; vertical-align: middle; margin: 0 4px;}
 
 .btn_calculate{ display: inline-block; padding: 10px 20px; background-color: #3385ff; color: #fff; border-radius: 4px; margin: 20px 0; cursor: pointer;}
 
 .row{width: 100%; overflow: hidden;}
 
-	.col_chart{ float: left; width: 600px; }
+	.col_chart{ float: right; width: 600px; }
 
 	.col_table{ float: left; width: 400px; }
 	.result_list{ width: 100%; }
