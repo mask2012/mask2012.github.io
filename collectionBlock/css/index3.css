@@ -5,17 +5,19 @@ body { background: #e1e1e1 url(../images/bg.png); -webkit-background-size: 200px
 .imgs{ position: relative; }
 .none{ display: none!important; }
 
-a{ color: #fff; text-decoration: none; border-bottom: 1px #f0f0f0 dotted;}
-a:hover{ color: #f0f0f0; }
+a{ color: #f0f0f0; text-decoration: none; border-bottom: 1px #f0f0f0 dotted;}
+a:hover{ color: #f0f0f0; border-bottom: 1px #fff solid; }
 
-
+h1{ text-align: center; font-size: 22px; padding: 20px; color: #555;}
 
 .masonry-root { display: flex; flex-flow: column wrap; width: 100%; height: auto; }
 
-.masonry-cell { box-sizing: border-box;  counter-increment: item-counter; border-radius: 5px; color: #fff; margin: 10px; position: relative;}
+.masonry-cell { box-sizing: border-box; counter-increment: item-counter; border-radius: 5px; color: #fff; margin: 10px; position: relative;}
 .masonry-cell:before{content:counter(item-counter); position: absolute; left: 5px; top: 3px; color: rgba(255,255,255,.8);}
 .masonry-cell .cell_title{ font-size: 18px; background: rgba(255,255,255,.05); padding: 10px 10px 10px 24px;}
-.masonry-cell .cell_list{ padding: 10px; line-height: 1.6; }
+.masonry-cell .cell_list{ padding: 10px; line-height: 1.5; }
+.masonry-cell .cell_list li{ margin-bottom: 10px;}
+.masonry-cell .cell_list a{ -ms-word-break: break-all; word-break: break-all; }
 
 
 

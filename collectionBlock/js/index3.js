@@ -51,7 +51,7 @@ collectionBlock.init();
 
 
 
-var minColWidth = 240;
+var minColWidth = 340;
 var roots;
 
 function onLoad() {
@@ -134,7 +134,7 @@ function onResize() {
             // set the masonry height to trigger
             // re-rendering of all cells over columns
             // one pixel more than the tallest column
-            root.element.style.maxHeight = masonryHeight + 1 + 'px';
+            root.element.style.maxHeight = masonryHeight + 100 + 'px';
 
             console.log(columns.map(function (column) {
                 return column.outerHeight;
