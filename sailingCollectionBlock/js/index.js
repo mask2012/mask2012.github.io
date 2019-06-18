@@ -25,56 +25,6 @@ $.extend($, {
 
 
 var collectionBlock={
-    collections:{
-        '基础概念':{
-            '精通比特币-by Andreas M Antonopoulos':'https://book.8btc.com/books/1/master_bitcoin/_book/jian_suo.html',
-            '什么是哈希':'https://www.bilibili.com/video/av34660129',
-            '公钥、私钥、地址到底是什么？':'https://www.jianshu.com/p/61493dbe7cc3',
-            '数字签名':'https://www.bilibili.com/video/av34660283/?spm_id_from=333.788.videocard.2',
-            'pow和pos的思考':'https://talk.nervos.org/t/nervos-pow/1639',
-        },
-        '安全保管':{
-            '《囤比特币：手握私钥的快感》':'https://weibo.com/ttarticle/p/show?id=2309404289198575222102',
-            '《囤比特币：如何管理私钥？》':'https://weibo.com/ttarticle/p/show?id=2309404289950832033282',
-            '比特币存储的几种方式':'https://github.com/mask2012/MaskCryptoCurrency/issues/9',
-            '当我忘记私钥压缩包密码之后……':'https://www.8btc.com/article/295161',
-            '比太钱包访谈':'https://www.8btc.com/article/54114',
-            '多重签名的现状':'http://www.528btc.com/college/40073.html',
-        },
-        '价值探讨':{
-            '《比特币到底价值何在？》':'https://www.bilibili.com/video/av52521260',
-            '九神写的基本价格模型':'https://weibo.com/ttarticle/p/show?id=2309404290588110395875&mod=zwenzhang',
-            '比特币有了定价模型?<br>过去四年94%的价格波动有了解释':'https://www.coingogo.com/news/3620',
-            '百万美元的比特币，7年后见！':'https://media.weibo.cn/article?id=2309404267111345162521&sudaref=github.com&display=0&retcode=6102',
-            '正本清源，深入讨论为什么比特币(BTC)<br>是有史以来最伟大的加密货币':'https://weibo.com/ttarticle/p/show?id=2309404378127815036019',
-            'nvm-ratio':'https://medium.com/cryptolab/network-value-to-metcalfe-nvm-ratio-fd59ca3add76',
-            'thomas lee的视频采访<br>就是他用用户数和交易量通过metcalfe模型<br>拟合出btc价格完美匹配':'https://www.businessinsider.com/bitcoin-price-how-to-value-fundstrat-tom-lee-2017-10?r=US&IR=T',
-        },
-        '关于扩容':{
-            '区块链可扩展性的那些技术：<br>侧链、分片、DAG ，子链！':'https://blog.csdn.net/tiandiwuya/article/details/80289380',
-            '比特币的闪电网络':'https://github.com/mask2012/MaskCryptoCurrency/issues/14',
-            '这项技术将带领比特币走向爆发（完结篇）':'https://zhuanlan.zhihu.com/p/34681487',
-            '《闪电网络现状：2019年闪电网络应用之路》':'http://www.qukuaiwang.com.cn/news/15095.html',
-            '总共有多少channel通道，总共抵押了多少btc':'https://p2sh.info/dashboard/db/lightning-network?orgId=1&from=1544031849207&to=1575567849208',
-            'bitcoinvisuals做的light network图表，更细节':'https://bitcoinvisuals.com/lightning',
-        },
-        '我粉的人':{
-            'ahr999 九神':'https://weibo.com/ttarticle/p/show?id=2309404283412763544904',
-            '可爱在香港':'https://weibo.com/u/6487144397?profile_ftype=1&is_article=1#_0',
-            '比特币观链哥':'https://weibo.com/sixiangdabaike?profile_ftype=1&is_article=1#_0',
-            '胡翌霖':'https://www.8btc.com/author/48',
-        },
-        '反面与缺陷':{
-            '比特币的反面':'https://github.com/mask2012/MaskCryptoCurrency/issues/10',
-            '区块链与状态爆炸':'https://talk.nervos.org/t/topic/1515',
-            '《你真的理解区块链状态爆炸吗？》':'https://www.bilibili.com/video/av49675166/?spm_id_from=333.788.b_7265636f5f6c697374.17%29',
-        },
-        'Nervos我很看好':{
-            'Nervos 笔记':'https://github.com/mask2012/MaskCryptoCurrency/issues/12',
-            'Nervos 社区书':'https://nervosbook.github.io/book/zh',
-            '橙皮书对Nervos团队的访谈':'https://xcong.com/articles/3377360',
-        },
-    }
 
     init:function(){
         // this.setHeight();
