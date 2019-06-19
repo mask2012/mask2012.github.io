@@ -69,21 +69,59 @@ var collectionBlock={
             '区块链与状态爆炸':'https://talk.nervos.org/t/topic/1515',
             '《你真的理解区块链状态爆炸吗？》':'https://www.bilibili.com/video/av49675166/?spm_id_from=333.788.b_7265636f5f6c697374.17%29',
         },
-        'Nervos我很看好':{
-            'Nervos 笔记':'https://github.com/mask2012/MaskCryptoCurrency/issues/12',
-            'Nervos 社区书':'https://nervosbook.github.io/book/zh',
-            '橙皮书对Nervos团队的访谈':'https://xcong.com/articles/3377360',
+        '关于分叉':{
+            '三国争霸： 一文道尽BTC，BCH，BSV到底在争什么?':'https://www.youtube.com/watch?v=JXc8zO3g37s'
         },
-    }
+        '图表-基本图表':{
+            'coinmarketcap top 1000市值排行':'https://coinmarketcap.com/',
+            '实时btc最新价':'https://tradeblock.com/markets/indices/',
+            '前10名市值占比比例':'https://coinmarketcap.com/charts/',
+            '全球交易所综合排行榜':'https://www.feixiaohao.com/exchange/',
+            'btc全球交易所深度':'http://data.bitcoinity.org/markets/books/USD',
+            '方块图展示币种占比':'https://coin360.com/',
+            'bitcoin explorer':'https://bitinfocharts.com/zh/bitcoin/explorer/',
+            '各币种算力对比':'https://bitinfocharts.com/zh/comparison/hashrate-btc-ltc-bch.html',
+        },
+        '图表-长期跟踪':{
+            'coinmarketcap top 1000市值排行':'https://coinmarketcap.com/',
+            '实时btc最新价':'https://tradeblock.com/markets/indices/',
+            '前10名市值占比比例':'https://coinmarketcap.com/charts/',
+            '全球交易所综合排行榜':'https://www.feixiaohao.com/exchange/',
+            'btc全球交易所深度':'http://data.bitcoinity.org/markets/books/USD',
+            '方块图展示币种占比':'https://coin360.com/',
+            'bitcoin explorer':'https://bitinfocharts.com/zh/bitcoin/explorer/',
+            '各币种算力对比':'https://bitinfocharts.com/zh/comparison/hashrate-btc-ltc-bch.html',
+        },
+        'Nervos我很看好':{
+            '币龄分布图 <br>叠加了btc价格，可单独查看某条线':'http://charts.woobull.com/bitcoin-hodl-waves/',
+            'bdd指数（Bitcoin Days Destroy）':'https://oxt.me/charts',
+            'btc活跃地址数':'https://bitinfocharts.com/zh/comparison/activeaddresses-btc.html',
+        },
+        
+    },
 
     init:function(){
-        // this.setHeight();
+        this.writeDom();
         this.addEvent();
-        // window.onLoad();
+
+        // subscribe to load and resize events
+        window.addEventListener('load', onLoad);
+        window.addEventListener('resize', onResize);
+
+
     },
-    setHeight:function(){
-        var items=$('.item').length;
-        $('#masonry').height(items*40);
+    writeDom:function(){
+        for (var i in this.collections) {
+            console.log('i',i);
+            console.log('collections[i]',this.collections[i]);
+            for (var j in this.collections[i]) {
+                console.log('j',j);
+                console.log('this.collections[i][j]',this.collections[i][j]);
+            }
+        }
+
+        var compiledHTML = $.compiler($("#listTemplate").html(), { data: this.collections});
+        $('#masonry').html(compiledHTML);
     },
     addEvent:function(){
         var that=this;
@@ -194,6 +232,3 @@ function onResize() {
     }
 }
 
-// subscribe to load and resize events
-window.addEventListener('load', onLoad);
-window.addEventListener('resize', onResize);
