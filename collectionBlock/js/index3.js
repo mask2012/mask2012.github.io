@@ -31,7 +31,11 @@ var collectionBlock={
             '什么是哈希':'https://www.bilibili.com/video/av34660129',
             '公钥、私钥、地址到底是什么？':'https://www.jianshu.com/p/61493dbe7cc3',
             '数字签名':'https://www.bilibili.com/video/av34660283/?spm_id_from=333.788.videocard.2',
+            'ECC椭圆曲线密码学':'https://b23.tv/av34660558',
+            'Merkle Tree':'https://b23.tv/av34660495',
             'pow和pos的思考':'https://talk.nervos.org/t/nervos-pow/1639',
+            '币天销毁是什么鬼':'https://www.jianshu.com/p/2d6327648500',
+            '什么是比特币天销毁“bitcoin days destroyed”？':'https://vimsky.com/article/3806.html',
         },
         '安全保管':{
             '《囤比特币：手握私钥的快感》':'https://weibo.com/ttarticle/p/show?id=2309404289198575222102',
@@ -83,21 +87,21 @@ var collectionBlock={
             '各币种算力对比':'https://bitinfocharts.com/zh/comparison/hashrate-btc-ltc-bch.html',
         },
         '图表-长期跟踪':{
-            'coinmarketcap top 1000市值排行':'https://coinmarketcap.com/',
-            '实时btc最新价':'https://tradeblock.com/markets/indices/',
-            '前10名市值占比比例':'https://coinmarketcap.com/charts/',
-            '全球交易所综合排行榜':'https://www.feixiaohao.com/exchange/',
-            'btc全球交易所深度':'http://data.bitcoinity.org/markets/books/USD',
-            '方块图展示币种占比':'https://coin360.com/',
-            'bitcoin explorer':'https://bitinfocharts.com/zh/bitcoin/explorer/',
-            '各币种算力对比':'https://bitinfocharts.com/zh/comparison/hashrate-btc-ltc-bch.html',
-        },
-        'Nervos我很看好':{
             '币龄分布图 <br>叠加了btc价格，可单独查看某条线':'http://charts.woobull.com/bitcoin-hodl-waves/',
             'bdd指数（Bitcoin Days Destroy）':'https://oxt.me/charts',
             'btc活跃地址数':'https://bitinfocharts.com/zh/comparison/activeaddresses-btc.html',
         },
-        
+        'Nervos我很看好':{
+            '对话Nervos团队':'https://xcong.com/articles/3377360',
+            'Nervos精华帖传送门':'https://talk.nervos.org/t/ckb/1475',
+            'Nervos笔记':'https://github.com/mask2012/MaskCryptoCurrency/issues/12',
+            'Nervos 社区书':'https://nervosbook.github.io/book/zh'
+        },
+        '其他币种观察':{
+            '“隐私币”出路何在？':'https://www.fengli.com/news/23367482.html',
+            'Horizen特性总结':'https://github.com/mask2012/MaskCryptoCurrency/issues/4',
+            'IOTA特性总结':'https://github.com/mask2012/MaskCryptoCurrency/issues/1'
+        }
     },
 
     init:function(){
