@@ -67,6 +67,8 @@ var collectionBlock={
             '可爱在香港':'https://weibo.com/u/6487144397?profile_ftype=1&is_article=1#_0',
             '比特币观链哥':'https://weibo.com/sixiangdabaike?profile_ftype=1&is_article=1#_0',
             '胡翌霖':'https://www.8btc.com/author/48',
+            'Thomas Lee(需翻墙)':'https://twitter.com/fundstrat',
+            'Jeffrey Wernick(需翻墙)':'https://www.youtube.com/results?search_query=Jeffrey+Wernick',
         },
         '反面与缺陷':{
             '比特币的反面':'https://github.com/mask2012/MaskCryptoCurrency/issues/10',
