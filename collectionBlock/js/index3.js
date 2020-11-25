@@ -99,7 +99,7 @@ var collectionBlock={
         'Nervos我很看好':{
             '对话Nervos团队':'https://xcong.com/articles/3377360',
             'Nervos精华帖传送门':'https://talk.nervos.org/t/ckb/1475',
-            '对话 Nervos：加密经济系统就像国家财政，它才是公链战争的胜负手':'https://mp.weixin.qq.com/s/xVdSc7xkiL_jb-GUxNwmBg'
+            '对话 Nervos：加密经济系统就像国家财政，它才是公链战争的胜负手':'https://mp.weixin.qq.com/s/xVdSc7xkiL_jb-GUxNwmBg',
             'Nervos笔记':'https://github.com/mask2012/MaskCryptoCurrency/issues/12',
             'Nervos 社区书':'https://nervosbook.github.io/book/zh'
         },
